@@ -41,7 +41,7 @@ Sistema completo de gerenciamento de turmas e acompanhamento de progresso de alu
 ### 1. Clone o repositório
 ```bash
 git clone <url-do-repositorio>
-cd API-JustDrems
+cd Just-dreams-2
 ```
 
 ### 2. Instale as dependências
