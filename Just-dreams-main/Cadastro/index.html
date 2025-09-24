@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Dreams - Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-section">
+                <div class="game-title">Just Dreams</div>
+            </div>
+            <h1>Cadastre-se e comece a sonhar!</h1>
+            <p>Entre em um universo de aprendizado e diversão com profissões e aventuras incríveis.</p>
+        </div>
+        <div class="right-panel">
+            <h2>Criar sua conta</h2>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showForm('student')">Aluno</button>
+                <button class="tab-button" onclick="showForm('teacher')">Professor</button>
+            </div>
+            
+            <form id="student-form" class="form active">
+                <div class="input-group">
+                    <label for="student-name">Nome completo</label>
+                    <input type="text" id="student-name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="student-age">Idade</label>
+                    <input type="number" id="student-age" name="age" min="6" max="8" required>
+                </div>
+                <div class="input-group">
+                    <label for="student-class">Turma</label>
+                    <input type="text" id="student-class" name="class" required>
+                </div>
+                <button type="submit" class="submit-button">Cadastrar Aluno</button>
+            </form>
+            
+            <form id="teacher-form" class="form">
+                <div class="input-group">
+                    <label for="teacher-name">Nome completo</label>
+                    <input type="text" id="teacher-name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="teacher-email">E-mail</label>
+                    <input type="email" id="teacher-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="teacher-school">Escola</label>
+                    <input type="text" id="teacher-school" name="school" required>
+                </div>
+                <button type="submit" class="submit-button">Cadastrar Professor</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
